@@ -10,7 +10,7 @@ import MobileNavbar from './Navbar/Mobile'
 import Footer from './Footer';
 
 export default function Layout(props) {
-  const title = "Welcome to the restaurant L'émotion !"
+  // const title = "Welcome to the restaurant L'émotion !"
   
   // const [mobMenu, setMobMenu] = useState(false);
   const { mobileNav, setMobileNav } = useContext(AppContext); 
@@ -19,7 +19,7 @@ export default function Layout(props) {
     <div>
 
       <Head>
-        <title>{title}</title>
+        {/* <title>{title}</title> */}
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script src="https://js.stripe.com/v3" />

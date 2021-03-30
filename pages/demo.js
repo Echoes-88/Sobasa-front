@@ -1,4 +1,4 @@
-
+import Head from "next/head";
 // Components
 
 import Banner from '../components/Banner';
@@ -23,6 +23,10 @@ import {lunchSetImg, happyHourImg, arrayImg1, arrayImg2} from '../datas/img';
 export default function Demo() {
   return (
     <div>
+        <Head>
+          <title>Le Sobasa - Demo</title>
+          <meta name="description" content="Vous trouverez ici une démonstration de plusieurs composants adaptables pour le site" />
+        </Head>
         <div className="banner">
           <Banner />
         </div>

@@ -1,5 +1,6 @@
 import {useEffect, useContext} from 'react';
 import AppContext from "../context/AppContext";
+import Head from "next/head";
 
 import TextImg from '../components/Blocks/TextImg';
 import Features from '../components/Products/Features'
@@ -20,7 +21,10 @@ export default function LeRestaurant() {
   
   return (
     <div className="flex justify-content-center flex-column align-items-center">
-
+      <Head>
+        <title>Le Sobasa - Menu</title>
+        <meta name="description" content="Le menu du Sobasa est constitué d'une quinzaine de plats avec principalement des Soba et des spécialitées japonaises en entrée." />
+      </Head>
       <div className="fullVw greyBg-1">
         <TextImg text={lunchSetText()} img={lunchSetImg}/>
       </div>
