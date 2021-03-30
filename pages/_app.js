@@ -10,9 +10,10 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
 
   const [mobileNav, setMobileNav] = useState(false);
+  const [currentPage, setCurrentPage] = useState("home");
   
   return (
-    <AppContext.Provider value={{ mobileNav, setMobileNav }}>
+    <AppContext.Provider value={{ mobileNav, setMobileNav, currentPage, setCurrentPage }}>
     <Layout>
       <Component {...pageProps} />
     </Layout>

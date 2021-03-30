@@ -17,10 +17,11 @@ import {simpleLorem, featured1, featured2, featured3, featured4} from '../datas/
 
 export default function Home() {
 
-  const { setMobileNav } = useContext(AppContext); 
+  const { setMobileNav, setCurrentPage } = useContext(AppContext); 
 
   useEffect(()=> {
     setMobileNav(false);
+    setCurrentPage("home");
   }, [])
 
   return (

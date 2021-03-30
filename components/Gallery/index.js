@@ -11,7 +11,7 @@ export default function Gallery({productsFeature}) {
   <div className={styles.tilesGroup}>
       {productsFeature.map(product =>
       <>
-          <div className={styles.mainTileContainer}>
+          <div key="{product.name}" className={styles.mainTileContainer}>
             <div className={`${styles[nameClass]} ${styles.tileContainer}`}>
               <img className={styles.galleryImg} src={product.img} alt={product.name}/>
             </div>

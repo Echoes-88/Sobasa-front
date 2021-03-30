@@ -17,10 +17,11 @@ const restaurantImg = "img/restaurant.webp";
 
 export default function LeRestaurant() {
 
-  const { setMobileNav } = useContext(AppContext); 
+  const { setMobileNav, setCurrentPage } = useContext(AppContext); 
 
   useEffect(()=> {
     setMobileNav(false);
+    setCurrentPage("menu")
   }, [])
   
   return (
@@ -32,7 +33,7 @@ export default function LeRestaurant() {
       <div className="fullVw greyBg-1">
           <TextImg text={lunchSetText()} img={lunchSetImg}/>
       </div>
-      <div className="block flex justify-content-center text-align-center width-80">
+      <div className="block flex justify-content-center text-align-center padding-1">
         <h2>- Soba -</h2>
         <Features products={soba}/>
         <h2>- Entrées -</h2>

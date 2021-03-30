@@ -16,3 +16,20 @@
   width: 40%;
   margin-left:2rem;
 }
+
+@media screen and (max-width: 650px) {
+  .textImgContainer {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .textBlock {
+    width: 80%;
+    margin-left:0;
+    text-align: center;
+  }
+}

@@ -1,12 +1,14 @@
 @font-face {
   font-family: "MontserratRegular";
   src: url("/font/Montserrat-Regular.ttf");
+  font-display: swap
 }
 
 @font-face {
   font-family: "RobotoBold";
   src: url("/font/RobotoCondensed-Regular.ttf");
   font-weight: 400;
+  font-display: swap
 }
 
   h1, h2 {
@@ -131,6 +133,10 @@
 
   .padding-m {
     padding: 2rem;
+  }
+
+  .padding-1 {
+    padding: 1rem;
   }
 
   /* Blocks */

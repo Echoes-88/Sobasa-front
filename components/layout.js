@@ -14,7 +14,7 @@ import Footer from './Footer';
 
 export default function Layout(props) {
 
-  const { mobileNav, setMobileNav } = useContext(AppContext); 
+  const { mobileNav, setMobileNav } = useContext(AppContext);
 
   return (
 
@@ -32,9 +32,9 @@ export default function Layout(props) {
       <header>
         <div>
           <DesktopNavbar setMobMenu={setMobileNav} mobMenu={mobileNav}/>
-          {mobileNav && (
+
             <MobileNavbar setMobMenu={setMobileNav} mobMenu={mobileNav}/>
-          )}
+
         </div>
       </header>
 

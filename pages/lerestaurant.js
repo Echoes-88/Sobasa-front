@@ -13,10 +13,11 @@ const restaurantImg = "img/restaurant.webp";
 
 export default function LeRestaurant() {
 
-  const { setMobileNav } = useContext(AppContext); 
+  const { setMobileNav, setCurrentPage } = useContext(AppContext); 
 
   useEffect(()=> {
     setMobileNav(false);
+    setCurrentPage("restaurant");
   }, [])
 
   return (

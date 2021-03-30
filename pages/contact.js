@@ -10,10 +10,11 @@ const SimpleText = dynamic(() => import('../components/Blocks/SimpleText'));
 import {adress} from '../datas/text';
 export default function Contact() {
 
-  const { setMobileNav } = useContext(AppContext); 
+  const { setMobileNav, setCurrentPage } = useContext(AppContext); 
 
   useEffect(()=> {
     setMobileNav(false);
+    setCurrentPage("contact");
   }, [])
   
   return (
