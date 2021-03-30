@@ -1,13 +1,18 @@
 import {useEffect, useContext} from 'react';
 import AppContext from "../context/AppContext";
 import Head from "next/head";
+import dynamic from 'next/dynamic'
 
-import Gallery from '../components/Gallery';
-import HalfTextImg from '../components/Blocks/HalfTextImg';
-import SimpleText from '../components/Blocks/SimpleText';
+// Components
+const Gallery = dynamic(() => import('../components/Gallery'));
+const HalfTextImg = dynamic(() => import('../components/Blocks/HalfTextImg'));
+const SimpleText = dynamic(() => import('../components/Blocks/SimpleText'));
+// import Gallery from '../components/Gallery';
+// import HalfTextImg from '../components/Blocks/HalfTextImg';
+// import SimpleText from '../components/Blocks/SimpleText';
 
 // Fake datas
-import {soba1, soba2, arrayImg1, arrayImg2, soba} from '../datas/img';
+import {soba} from '../datas/img';
 import {simpleLorem, featured1, featured2, featured3, featured4} from '../datas/text';
 
 export default function Home() {

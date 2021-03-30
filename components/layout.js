@@ -1,14 +1,15 @@
 import {useContext} from 'react';
-
 import Head from "next/head";
-import { Html } from 'next/document'
-
-import AppContext from "../context/AppContext";
+import dynamic from 'next/dynamic'
 
 // Components
+// const DesktopNavbar = dynamic(() => import('./Navbar/Desktop'));
+// const MobileNavbar = dynamic(() => import('./Navbar/Mobile'));
+// const AppContext = dynamic(() => import('../context/AppContext'));
+// const Footer = dynamic(() => import('./Footer'));
 import DesktopNavbar from './Navbar/Desktop';
 import MobileNavbar from './Navbar/Mobile'
-
+import AppContext from "../context/AppContext";
 import Footer from './Footer';
 
 export default function Layout(props) {
@@ -26,7 +27,6 @@ export default function Layout(props) {
         <meta name="twitter:title" content="Post headline" />
         <meta name="twitter:image" content="https://zealous-babbage-bfd2b3.netlify.app/img/soba/soba4.jpg" />
         <meta name="twitter:site" content="@sobasaRestaurant" />
-        <script src="https://js.stripe.com/v3" />
       </Head>
 
       <header>

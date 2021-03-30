@@ -1,9 +1,13 @@
-import {useEffect, useContext} from 'react';
+import React, {useEffect, useContext} from 'react';
 import AppContext from "../context/AppContext";
 import Head from "next/head";
+import dynamic from 'next/dynamic'
 
-import SimpleText from '../components/Blocks/SimpleText';
-import {simpleLorem, adress} from '../datas/text';
+// Components
+const SimpleText = dynamic(() => import('../components/Blocks/SimpleText'));
+// import SimpleText from '../components/Blocks/SimpleText';
+
+import {adress} from '../datas/text';
 export default function Contact() {
 
   const { setMobileNav } = useContext(AppContext); 

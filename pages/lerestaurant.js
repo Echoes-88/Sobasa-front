@@ -1,9 +1,13 @@
-import {useEffect, useContext} from 'react';
+import React, {useEffect, useContext} from 'react';
 import AppContext from "../context/AppContext";
 import Head from "next/head";
+import dynamic from 'next/dynamic'
 
-import HalfTextImg from '../components/Blocks/HalfTextImg';
-import Gallery2 from '../components/Gallery/FourColumns'
+// Components
+const HalfTextImg = dynamic(() => import('../components/Blocks/HalfTextImg'));
+const Gallery2 = dynamic(() => import('../components/Gallery/FourColumns'));
+// import HalfTextImg from '../components/Blocks/HalfTextImg';
+// import Gallery2 from '../components/Gallery/FourColumns'
 
 const restaurantImg = "img/restaurant.webp";
 
