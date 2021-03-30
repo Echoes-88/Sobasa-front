@@ -9,7 +9,7 @@ export default function Features({products}) {
 
     {products.map(product => (
       <div className={styles.product}>
-      <img className={styles.productImage} src={product.img}/>
+      <img className={styles.productImage} src={product.img} alt={product.name}/>
       <p className="strong">{product.name}</p>
       <p className='italic'>{product.description}</p>
       <p className="redColor">{product.price}</p>

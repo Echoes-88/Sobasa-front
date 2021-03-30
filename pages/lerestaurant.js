@@ -5,10 +5,6 @@ import Head from "next/head";
 import HalfTextImg from '../components/Blocks/HalfTextImg';
 import Gallery2 from '../components/Gallery/FourColumns'
 
-// Fake datas
-import {lunchSetImg, happyHourImg, arrayImg, arrayImg2} from '../datas/img';
-import {lunchSetText, presentationText, happyHourText, simpleLorem} from '../datas/text';
-
 const restaurantImg = "img/restaurant.webp";
 
 export default function LeRestaurant() {

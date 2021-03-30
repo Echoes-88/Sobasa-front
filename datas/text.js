@@ -17,7 +17,7 @@ export const presentationText = () => {
 export const lunchSetText = () => {
   return(
     <>
-      <h2>Offre spéciale</h2>
+      <h1>Offre spéciale</h1>
       <p className="strong lineHeight-l">VENDREDI, SAMEDI & DIMANCHE MIDI</p>
       <p className="backline lineHeight-l">L'occasion idéale pour découvrir un vaste panel de notre cuisine authentique.</p>
       <p className="backline lineHeight-l">Composition du set : Gomadare soba, Tofu frais au gingembre, Epinards marinés & assortiment de légumes croquants saumurés.</p>

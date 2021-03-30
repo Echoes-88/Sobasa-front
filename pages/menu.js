@@ -29,11 +29,11 @@ export default function LeRestaurant() {
         <TextImg text={lunchSetText()} img={lunchSetImg}/>
       </div>
       <div className="block flex justify-content-center text-align-center width-80">
-        <h1>- Soba -</h1>
+        <h2>- Soba -</h2>
         <Features products={soba}/>
-        <h1>- Entrées -</h1>
+        <h2>- Entrées -</h2>
         <Features products={appetizers}/>
-        <h1>- Saké -</h1>
+        <h2>- Saké -</h2>
         <Features products={drinks}/>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function Gallery({productsFeature}) {
       <>
           <div className={styles.mainTileContainer}>
             <div className={`${styles[nameClass]} ${styles.tileContainer}`}>
-              <img className={styles.galleryImg} src={product.img}/>
+              <img className={styles.galleryImg} src={product.img} alt={product.name}/>
             </div>
             <div className={styles.backgroundFilter}>
               <div className={styles.test}>
