@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("/font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/font/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+}
+
+  h1, h2 {
+    font-family: RobotoBold;
+  }
+
+  p, a {
+    font-family: MontserratRegular;
+  }
+
+  h1 {
+    font-size:1.8em;
+    font-weight:bold;
+    margin: 1rem 0;
+  }
+  
+  h2 {
+    font-size:1.5em;
+    font-weight:bold;
+    margin: 1rem 0;
+  }
+
+  .container {
+    padding-top: 5rem;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .marginAuto {
+    margin: auto;
+  }
+
+  .maxWidthBig {
+    max-width: 1100px;
+  }
+
+  .two-column {
+    width:50%;
+    max-width:600px;
+  }
+
+  .linebreak {
+    margin:1rem 0;
+  }
+  
+  .backline {
+    margin:0;
+  }
+
+  .strong {
+    font-weight: bold;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .lineHeight-l {
+    line-height: 1.5em;
+  }
+
+  .grid {
+    display:block;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+    /* Width & height */
+  .fullHeight {
+    height: 100%;
+  }
+
+  .fullVw {
+    width: 100vw;
+  }
+
+
+  /* Font size */
+  .font-m {
+    font-size: 1em;
+  }
+
+  .font-s {
+    font-size: 0.8em;
+  }
+
+  .text-align-center {
+    text-align: center;
+  }
+
+    /* Paddings */
+  .vert-padding {
+    padding: 2rem 0;
+  }
+
+  .padding-m {
+    padding: 2rem;
+  }
+
+  /* Blocks */
+  .textImg {
+    min-height: 18rem;
+  }
+
+    /* color */
+    .redColor {
+      color: red;
+    }
+    .greenColor {
+      color: #25a545;
+    }
+
+  /* background */
+  .greyBg {
+    background-color: #F3F4F3;
+  }
+
+  .greyBg-1 {
+    background-color: #f7f7f7;
+  }
+
+  .map {
+    width: 100vw;
+    height: 30rem;
+  }
+
+  .gallery {
+    width: 50%;
+    max-width: 600px;
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .width-80 {
+      width: 80%;
+    }
+  }

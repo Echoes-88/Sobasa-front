@@ -1,0 +1,42 @@
+import {useEffect, useContext} from 'react';
+import AppContext from "../context/AppContext";
+
+import Gallery from '../components/Gallery';
+import HalfTextImg from '../components/Blocks/HalfTextImg';
+import SimpleText from '../components/Blocks/SimpleText';
+
+// Fake datas
+import {soba1, soba2, arrayImg1, arrayImg2, soba} from '../datas/img';
+import {simpleLorem, featured1, featured2, featured3, featured4} from '../datas/text';
+
+export default function Home() {
+
+  const { setMobileNav } = useContext(AppContext); 
+
+  useEffect(()=> {
+    setMobileNav(false);
+  }, [])
+
+  return (
+      <>
+      
+        <div className="greyBg-1">
+          <SimpleText text={simpleLorem()} title="Le Sobasa"/>
+        </div>
+
+        <HalfTextImg image={soba} title="Le soba, notre spécialité" button={true}/>
+
+        <div className="flex justify-content-center vert-padding greyBg-1 wrap">
+          <div className="gallery width-80">
+            <Gallery productsFeature={featured3} />
+            <Gallery productsFeature={featured1} />
+          </div>
+          <div className="gallery width-80">
+            <Gallery productsFeature={featured2} />
+            <Gallery productsFeature={featured4} />
+          </div>
+        </div>
+
+      </>
+  )
+}

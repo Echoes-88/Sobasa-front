@@ -1,0 +1,78 @@
+.featureContainer {
+  max-width: 1100px;
+  text-align: center;
+}
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.product {
+  padding: 1rem;
+  width: 30%;
+  position: relative;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid grey;
+  margin: 1%;
+  min-height: 20rem;
+}
+
+.product p {
+  margin-top:0.8rem;
+}
+
+.product img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.product img:hover {
+  opacity: 0.9;
+}
+
+.productPromo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d31212;
+  padding: 0.3rem 0.8rem;
+  color: white;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 700px) {
+  .productsContainer {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 80%;
+  }
+}
+
+
+.productImage {
+  /* animation-duration: 2s;
+  animation-name: slidein; */
+  border: thick double #808080;
+}
+
+@keyframes slidein {
+  from {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+  25% {
+    border-top: 1px solid;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
